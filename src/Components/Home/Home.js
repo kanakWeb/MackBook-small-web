@@ -1,37 +1,48 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import useProduct from "../../hooks/useProduct";
-import Product from "../Product/Product";
+import useReview from "../../hooks/useReview";
+import Reviewhome from "../Reviewhome/Reviewhome";
 
 const Home = () => {
-  const [products, setProducts] = useProduct([]);
+  const [reviews] = useReview([]);
 
   return (
     <div className="container">
       <div className="row  py-5">
         <div className="col-lg-7 col-sm-12">
-          <h2>Heart healthy fruits that will keep your high cholesterol at bay!</h2>
+          <h2 className="py-5">
+            12-inch MacBook has been discontinued
+          </h2>
           <p className="fs-5 text-wrap">
-          There are many fruits that keep your cholesterol level at bay! Along with adding deliciousness and nutritional value to your diet, there are fruits that add soluble fiber and minerals that are good in balancing the high cholesterol level in the body.It is being said that fruits give you instant energy and boost your body. Several fruits are good to balance the high cholesterol levels of the body. Fruits with a good balance of nutrition and soluble fiber prevent you from heart diseases such as heart stroke, artery blockage, heart attack, and other heart problems. Here is a list of fruits that you can add to your everyday meal for a good heart-health.
+            Apple to debut a new version of the 12in MacBook that runs
+            on an Apple-made ARM processor. Last year, Apple
+            discontinued the 12-inch MacBook due to its lack of ports,
+            the Butterfly keyboard issues, and its high base price of
+            $1,299.
           </p>
+          <button className="btn btn-secondary">Explore Buy</button>
         </div>
         <div className="col-lg-5 col-sm-12">
           <img
             width="500px"
-            src="https://st.depositphotos.com/1486923/1948/i/600/depositphotos_19486333-stock-photo-fruit-background.jpg"
+            src="https://www.bdstall.com/asset/product-image/giant_57817.jpg"
             alt=""
           />
         </div>
       </div>
-
+      <h2 className="text-center">Top Reviews</h2>
       <div className=" row g-4 py-5">
-        {products.slice(0, 3).map((product) => (
-          <Product key={product.id} product={product}></Product>
+        {reviews.slice(0, 3).map((review) => (
+          <Reviewhome key={review.id} product={review}></Reviewhome>
         ))}
       </div>
       <div className="py-5">
         <Link className="link " to="/Reviews">
-        <p className="text-center"><button className="btn  btn-primary">See All Reviews</button></p>
+          <p className="text-center">
+            <button className="btn  btn-primary">
+              See All Reviews
+            </button>
+          </p>
         </Link>
       </div>
     </div>

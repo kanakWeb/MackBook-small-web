@@ -1,38 +1,44 @@
 [
     {
-        "month": "Mar",
-        "investment": 100000,
-        "sell": 241,
-        "revenue": 10401
+      "id": "623de662655b6426100d7bb3",
+      "picture": "https://bootstrapious.com/i/snippets/sn-team/teacher-2.jpg",
+      "Rateing": "⭐️⭐️⭐️⭐️",
+      "reName":"A. Robinson",
+      "Review":"is surprisingly great, With an improved processor, trackpad, and better RAM options, it’s an excellent."
     },
     {
-        "month": "Apr",
-        "investment": 200000,
-        "sell": 423,
-        "revenue": 24500
+      "id": "623de662dafa46f56e258a04",
+      "picture": "https://bootstrapious.com/i/snippets/sn-team/teacher-4.jpg",
+      "Rateing": "⭐️⭐️⭐️⭐️",
+      "reName":"Mrs.Mery",
+      "Review":"MacBook for almost two years and I love it, but if I was buying a MacBook.So MacBooks to consider."
     },
     {
-        "month": "May",
-        "investment": 500000,
-        "sell": 726,
-        "revenue": 67010
+      "id": "623de66211ea520a1bd78037",
+      "picture": "https://randomuser.me/api/portraits/women/20.jpg",
+      "Rateing": "⭐️⭐️⭐️⭐️⭐️",
+      "reName":"A. Haryson",
+      "Review":"Given the 12-inch MacBook has been discontinued, it's hard to assume Apple will reintroduce it into its lineup"
     },
     {
-        "month": "Jun",
-        "investment": 500000,
-        "sell": 529,
-        "revenue": 40405
+      "id": "623de662f44fd132aeb062a6",
+      "picture": "https://bootstrapious.com/i/snippets/sn-team/teacher-1.jpg",
+      "Rateing": "⭐️⭐️⭐️⭐️",
+      "reName":"Mr. Robinson",
+      "Review":"MacBook Air (M1, 2020) The best student MacBook for the majority of people."
     },
     {
-        "month": "Jul",
-        "investment": 600000,
-        "sell": 601,
-        "revenue": 50900
+      "id": "623de662aeedec6230e6e49f",
+      "picture": "https://bootstrapious.com/i/snippets/sn-team/teacher-7.jpg",
+      "Rateing": "⭐️⭐️⭐️⭐️",
+      "reName":"Mr galy",
+      "Review":"a laptop and you want to stay in the Apple ecosystem, I'd say this is nice."
     },
     {
-        "month": "Aug",
-        "investment": 700000,
-        "sell": 670,
-        "revenue": 61000
-    }
-]
+        "id": "623de885c32598d1332a6ae5",
+        "picture": "https://randomuser.me/api/portraits/men/64.jpg",
+        "Rateing": "⭐️⭐️⭐️⭐️⭐️",
+        "reName":"Penny J. Gilmer",
+        "Review":"we expect to see the starting price of a new MacBook Pro 2022 jump"
+      }
+  ]

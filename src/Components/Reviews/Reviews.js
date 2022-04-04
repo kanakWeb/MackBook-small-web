@@ -1,19 +1,19 @@
 import React from "react";
-import useProduct from "../../hooks/useProduct";
-import ReviewProduct from "../ReviewProduct/ReviewProduct";
+import useReview from "../../hooks/useReview";
+import ReviewAll from "../ReviewAll/ReviewAll";
 
 const Reviews = () => {
-  const [products, setProducts] = useProduct([]);
+  const [reviews] = useReview([]);
   return (
     <div className="container py-5">
-      <h4>This is Review item</h4>
+      <h4 className="text-center fw-bold">See All The Reviews</h4>
 
       <div className=" row g-4 py-5">
-        {products.map((product) => (
-          <ReviewProduct
-            key={product.id}
-            product={product}
-          ></ReviewProduct>
+        {reviews.map((review) => (
+          <ReviewAll
+            key={review.id}
+            product={review}
+          ></ReviewAll>
         ))}
       </div>
     </div>
