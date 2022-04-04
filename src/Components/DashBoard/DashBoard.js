@@ -9,7 +9,7 @@ import {
   Legend,
 } from "recharts";
 import { BarChart, Bar } from "recharts";
-import { Treemap } from "recharts";
+import { AreaChart,Area } from "recharts";
 
 const DashBoard = () => {
   const data = [
@@ -52,8 +52,9 @@ const DashBoard = () => {
   ];
   return (
     <div className="container ">
-      <h3 className="py-5">This is Dashboard</h3>
+      <h3 className="py-5">Month and sell</h3>
       <LineChart
+      
         width={730}
         height={250}
         data={data}
@@ -69,6 +70,7 @@ const DashBoard = () => {
       </LineChart>
 
       <div className="Barchat py-5">
+      <h3 className="py-5">Sell and revenuev</h3>
         <BarChart width={730} height={250} data={data}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="month" />
@@ -80,16 +82,26 @@ const DashBoard = () => {
         </BarChart>
       </div>
       <div className="py-5">
-        <Treemap
-          width={730}
-          height={250}
-          data={data}
-          dataKey="sell"
-          ratio={4 / 3}
-          stroke="#fff"
-          XAxis='month'
-          fill="#8884d8"
-        />
+      <h3 className="py-5">Month and sell</h3>
+      <AreaChart width={730} height={250} data={data}
+  margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+  <defs>
+    <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8}/>
+      <stop offset="95%" stopColor="#8884d8" stopOpacity={0}/>
+    </linearGradient>
+    <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8}/>
+      <stop offset="95%" stopColor="#82ca9d" stopOpacity={0}/>
+    </linearGradient>
+  </defs>
+  <XAxis dataKey="name" />
+  <YAxis />
+  <CartesianGrid strokeDasharray="3 3" />
+  <Tooltip />
+  <Area type="monotone" dataKey="sell" stroke="#8884d8" fillOpacity={1} fill="url(#colorUv)" />
+  <Area type="monotone" dataKey="month" stroke="#82ca9d" fillOpacity={1} fill="url(#colorPv)" />
+</AreaChart>
       </div>
     </div>
   );
