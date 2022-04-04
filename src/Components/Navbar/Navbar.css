@@ -1,4 +1,5 @@
 .navBar{
+    width: 100%;
     text-decoration: none;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     padding: 15px;
@@ -6,3 +7,17 @@
    font-size: 20px;
    font-weight: bold;
 }
+.link {
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 20px;
+    color: #1e90c2;
+    transition: color ease-in-out 200ms;
+  }
+  .active-link{
+    color: #103a4d;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 20px;
+    transition: color ease-in-out 200ms;
+  }
