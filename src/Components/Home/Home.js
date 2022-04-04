@@ -30,8 +30,8 @@ const Home = () => {
         ))}
       </div>
       <div className="py-5">
-        <Link className="link text-center" to="/Reviews">
-        See All Reviews
+        <Link className="link " to="/Reviews">
+        <p className="text-center"><button className="btn  btn-primary">See All Reviews</button></p>
         </Link>
       </div>
     </div>

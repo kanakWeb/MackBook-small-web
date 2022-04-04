@@ -3,36 +3,54 @@
       "id": "623de662655b6426100d7bb3",
       "price": 48,
       "picture": "https://www.nicepng.com/png/detail/380-3807920_pineapple-png.png",
-      "name": "pineapple"
+      "name": "pineapple",
+      "Rateing": "4.5",
+      "reName":"A. Robinson",
+      "Review":"Baby leaf tips of the guava tree stops nausea in minutes"
     },
     {
       "id": "623de662dafa46f56e258a04",
       "price": 49,
       "picture": "https://i5.walmartimages.ca/images/Enlarge/538/392/6000198538392.jpg",
-      "name": "guava"
+      "name": "guava",
+      "Rateing": "4.5",
+      "reName":"A. Robinson",
+      "Review":"Baby leaf tips of the guava tree stops nausea in minutes"
     },
     {
       "id": "623de66211ea520a1bd78037",
       "price": 50,
       "picture": "https://www.collinsdictionary.com/images/full/grape_229112122.jpg",
-      "name": "grapes"
+      "name": "grapes",
+      "Rateing": "4.5",
+      "reName":"A. Robinson",
+      "Review":"Baby leaf tips of the guava tree stops nausea in minutes"
     },
     {
       "id": "623de662f44fd132aeb062a6",
       "price": 51,
       "picture": "https://d3mvlb3hz2g78.cloudfront.net/wp-content/uploads/2011/07/thumb_720_450_fresh-red-strawberry_shutterstock_77084539.jpg",
-      "name": "Strawberry"
+      "name": "Strawberry",
+      "Rateing": "4.5",
+      "reName":"A. Robinson",
+      "Review":"Baby leaf tips of the guava tree stops nausea in minutes"
     },
     {
       "id": "623de662aeedec6230e6e49f",
       "price": 52,
       "picture": "https://cdn.britannica.com/18/176518-050-5AB1E61D/lychee-fruits-Southeast-Asia.jpg",
-      "name": "Lychee"
+      "name": "Lychee",
+      "Rateing": "4.5",
+      "reName":"A. Robinson",
+      "Review":"Baby leaf tips of the guava tree stops nausea in minutes"
     },
     {
         "id": "623de885c32598d1332a6ae5",
         "price": 53,
         "picture": "https://blog.pureindianfoods.com/wp-content/uploads/2020/09/alphonso-mango.jpg",
-        "name": "Mango"
+        "name": "Mango",
+        "Rateing": "5.0",
+        "reName":"Penny J. Gilmer",
+        "Review":"Mangoes are one of the most delicious and nutrient-dense fruits"
       }
   ]
