@@ -4,7 +4,7 @@
 
 
 
-### My project name Macbook
+### My project name is Macbook
 
 
 

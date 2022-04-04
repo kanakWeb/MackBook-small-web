@@ -52,7 +52,7 @@ const DashBoard = () => {
   ];
   return (
     <div className="container ">
-      <h3 className="py-5">Month and sell</h3>
+      <h3 className="py-5">Sell Vs Month</h3>
       <LineChart
       
         width={730}
@@ -70,7 +70,7 @@ const DashBoard = () => {
       </LineChart>
 
       <div className="Barchat py-5">
-      <h3 className="py-5">Sell and revenuev</h3>
+      <h3 className="py-5">Sell Vs Revenuev</h3>
         <BarChart width={730} height={250} data={data}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="month" />
@@ -82,7 +82,7 @@ const DashBoard = () => {
         </BarChart>
       </div>
       <div className="py-5">
-      <h3 className="py-5">Month and sell</h3>
+      <h3 className="py-5">Month Vs sell</h3>
       <AreaChart width={730} height={250} data={data}
   margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
   <defs>
