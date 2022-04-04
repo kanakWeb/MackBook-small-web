@@ -60,7 +60,7 @@ const DashBoard = () => {
         margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
       >
         <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
+        <XAxis dataKey="month" />
         <YAxis />
         <Tooltip />
         <Legend />
@@ -71,7 +71,7 @@ const DashBoard = () => {
       <div className="Barchat py-5">
         <BarChart width={730} height={250} data={data}>
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
+          <XAxis dataKey="month" />
           <YAxis />
           <Tooltip />
           <Legend />
@@ -84,9 +84,10 @@ const DashBoard = () => {
           width={730}
           height={250}
           data={data}
-          dataKey="revenue"
+          dataKey="sell"
           ratio={4 / 3}
           stroke="#fff"
+          XAxis='month'
           fill="#8884d8"
         />
       </div>

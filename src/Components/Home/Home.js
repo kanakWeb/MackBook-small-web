@@ -7,8 +7,8 @@ const Home = () => {
   const [reviews] = useReview([]);
 
   return (
-    <div className="container">
-      <div className="row  py-5">
+    <div >
+      <div className="row container py-5">
         <div className="col-lg-7 col-sm-12">
           <h2 className="py-5">
             12-inch MacBook has been discontinued
@@ -30,6 +30,7 @@ const Home = () => {
           />
         </div>
       </div>
+      <div className="container">
       <h2 className="text-center">Top Reviews</h2>
       <div className=" row g-4 py-5">
         {reviews.slice(0, 3).map((review) => (
@@ -44,6 +45,7 @@ const Home = () => {
             </button>
           </p>
         </Link>
+      </div>
       </div>
     </div>
   );
