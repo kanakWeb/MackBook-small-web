@@ -1,7 +1,7 @@
 import React from "react";
 
 const Product = (props) => {
-  const {picture,reName,Rateing,Review,} = props.product;
+  const {picture,reName,Rateing,Review,} = props.review;
   return (
     <div className="col-xl-4 col-sm-6 mb-5">
             <div className="bg-white rounded shadow-sm py-5 px-4 w-100"><span className="text-center small ">
