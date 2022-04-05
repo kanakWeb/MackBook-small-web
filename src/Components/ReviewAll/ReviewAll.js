@@ -1,6 +1,6 @@
 import React from "react";
 
-const ReviewProduct = (props) => {
+const ReviewAll = (props) => {
   const {picture,reName,Rateing,Review} = props.review;
   return (
     <div className="col-xl-4 col-sm-6 mb-5">
@@ -15,4 +15,4 @@ const ReviewProduct = (props) => {
         </div>
   );
 };
-export default ReviewProduct;
+export default ReviewAll;
