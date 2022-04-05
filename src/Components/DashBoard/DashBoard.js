@@ -52,7 +52,7 @@ const DashBoard = () => {
   ];
   return (
     <div className="container ">
-      <h3 className="py-5">Sell Vs Month</h3>
+      <h3 className="py-5">Sell Vs Revenue</h3>
       <LineChart
       
         width={730}
@@ -70,7 +70,7 @@ const DashBoard = () => {
       </LineChart>
 
       <div className="Barchat py-5">
-      <h3 className="py-5">Sell Vs Revenuev</h3>
+      <h3 className="py-5">Sell Vs Investment</h3>
         <BarChart width={730} height={250} data={data}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="month" />
@@ -78,11 +78,11 @@ const DashBoard = () => {
           <Tooltip />
           <Legend />
           <Bar dataKey="sell" fill="#8884d8" />
-          <Bar dataKey="revenuev" fill="#82ca9d" />
+          <Bar dataKey="investment" fill="blue" />
         </BarChart>
       </div>
       <div className="py-5">
-      <h3 className="py-5">Month Vs sell</h3>
+      <h3 className="py-5">Revenue Vs investment</h3>
       <AreaChart width={730} height={250} data={data}
   margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
   <defs>
@@ -99,7 +99,8 @@ const DashBoard = () => {
   <YAxis />
   <CartesianGrid strokeDasharray="3 3" />
   <Tooltip />
-  <Area type="monotone" dataKey="sell" stroke="#8884d8" fillOpacity={1} fill="url(#colorUv)" />
+  <Area type="monotone" dataKey="revenue" stroke="#8884d8" fillOpacity={1} fill="url(#colorUv)" />
+  <Area type="monotone" dataKey="investment" stroke="orange" fillOpacity={1} fill="url(#colorUv)" />
   <Area type="monotone" dataKey="month" stroke="#82ca9d" fillOpacity={1} fill="url(#colorPv)" />
 </AreaChart>
       </div>
